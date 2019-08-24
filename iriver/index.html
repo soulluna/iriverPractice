@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>아이리버 레이아웃 - Header</title>
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <!--기본문법-->
+    <script src="./js/jquery.easing.1.3.js"></script>
+    <!--가속도-->
+    <script src="js/jquery-ui.min.js"></script><!-- user interface -->
+    <script src="js/prefixfree.min.js"></script><!-- vender prefix -->
+    <script src="./js/main.js"></script><!-- user js -->
+    <script src="./js/common.js"></script><!-- user js -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/common.css"/>
+</head>
+
+<body>
+    <!--header-->
+    <div id="header">
+        <h1><a href="#"><img src="images/top_logo.gif" /></a></h1>
+        <!--gnb-->
+        <div class="gnb m1" id="gnb">
+            <!-- 1st_depth_gnb-->
+            <ul class="top_depth_01">
+                <!-- 제품 메뉴-->
+                <li class="m1">
+                    <a href="#"><img src="./images/gnb_menu01.gif" alt="제품" /></a>
+                    <ul class="top_depth_02" id="gnb_1th_1">
+                        <li class="s1"><a href="#"><img src="./images/gnbProdut_sub13.gif" alt="Astell&kern" /></a></li>
+                        <li class="s2"><a href="#"><img src="./images/gnbProdut_sub01.gif" alt="MP3" /></a></li>
+                        <li class="s3"><a href="#"><img src="./images/gnbProdut_sub14.gif" alt="보이스 레코더" /></a></li>
+                        <li class="s4"><a href="#"><img src="./images/gnbProdut_sub10.gif" alt="오디오" /></a></li>
+                        <li class="s5"><a href="#"><img src="./images/gnbProdut_sub04.gif" alt="전자사전" /></a></li>
+                        <li class="s6"><a href="#"><img src="./images/gnbProdut_sub07.gif" alt="스마트 디바이스" /></a></li>
+                        <li class="s7"><a href="#"><img src="./images/gnbProdut_sub08.gif" alt="악세서리" /></a></li>
+                        <li class="s8"><a href="#"><img src="./images/gnbProdut_sub15.gif" alt="Blank" /></a></li>
+                        <li class="s9"><a href="#"><img src="./images/gnbProdut_sub16.gif" alt="T collection" /></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 커뮤니티 -->
+                <li class="m2">
+                    <a href="#"><img src="./images/gnb_menu03.gif" alt="커뮤니티" /></a>
+                    <ul class="top_depth_02" id="gnb_1th_2">
+                        <li class="s1"><a href="#"><img src="./images/gnbCommunity_sub01.gif" alt="공지사항" /></a></li>
+                        <li class="s2"><a href="#"><img src="./images/gnbCommunity_sub02.gif" alt="이벤트" /></a></li>
+                        <li class="s3"><a href="#"><img src="./images/gnbCommunity_sub03.gif" alt="파워리뷰" /></a></li>
+                        <li class="s4"><a href="#"><img src="./images/gnbCommunity_sub04.gif" alt="유저리뷰" /></a></li>
+                        <li class="s5"><a href="#"><img src="./images/gnbCommunity_sub09.gif" alt="아스텔앤컨 리뷰" /></a></li>
+                    </ul>
+                </li>
+
+                <!-- 고객지원 -->
+                <li class="m3">
+                    <a href="#"><img src="./images/gnb_menu04.gif" alt="고객지원" /></a>
+                    <ul class="top_depth_02" id="gnb_1th_3">
+                        <li class="s1"><a href="#"><img src="./images/gnbCustom_sub01.gif" alt="고객지원 안내" /></a></li>
+                        <li class="s2"><a href="#"><img src="./images/gnbCustom_sub02.gif" alt="FAQ" /></a></li>
+                        <li class="s3"><a href="#"><img src="./images/gnbCustom_sub03.gif" alt="온라인 문의" /></a></li>
+                        <li class="s4"><a href="#"><img src="./images/gnbCustom_sub04.gif" alt="다운로드" /></a></li>
+                        <li class="s5"><a href="#"><img src="./images/gnbCustom_sub05.gif" alt="아이리버플러스" /></a></li>
+                        <li class="s6"><a href="#"><img src="./images/gnbCustom_sub06.gif" alt="A/S 안내 및 신청" /></a></li>
+                    </ul>
+                </li>
+
+                <!-- 커뮤니티 -->
+                <li class="m4">
+                    <a href="#"><img src="./images/gnb_menu10.gif" alt="쇼핑몰" /></a>
+                </li>
+
+                <!-- 아스텔엔컨 / 엑티보 / 플로-->
+                <li class="shop"><a href="#"><img src="./images/gnb_menu09.gif" alt="아스텔엔컨" /></a></li>
+                <li class="shop2"><a href="#"><img src="./images/gnb_menu11.gif" alt="엑티보" /></a></li>
+                <li class="shop3"><a href="#"><img src="./images/gnb_menu12.gif" alt="플로" /></a></li>
+            </ul>
+        </div>
+        <!--gnb-->
+        <!--right_lnb-->
+        <div class="right_lnb">
+            <!--top_lnb(로그인 / 회원가입 / 마이페이지 / 공지사항)-->
+            <ul class="top_lnb">
+                <li><a href="#"><img src="./images/top_smenu01.gif" alt="로그인" /></a></li>
+                <li><a href="#"><img src="./images/top_smenu02.gif" alt="회원가입" /></a></li>
+                <li><a href="#"><img src="./images/top_smenu03.gif" alt="마이페이지" /></a></li>
+                <li><a href="#"><img src="./images/top_smenu04.gif" alt="공지사항" /></a></li>
+            </ul>
+            <!--//top_lnb-->
+            <!--top_search-->
+            <div class="top_search">
+                <input type="text" class="search_text" />
+                <button class="search_button"><a href="#"><img src="./images/top_btnSearch.gif" alt="검색" /></a></button>
+            </div>
+            <!--//top_search-->
+            <!--btn_full-->
+            <ul class="btn_full">
+                <li><a href="#"><img src="./images/top_btnFull.gif" alt="전체보기" /></a></li>
+            </ul>
+            <!--//btn_full-->
+        </div>
+        <!--//right_lnb-->
+    </div>
+    <!--//header-->
+    <!--전체보기 팝업창 영역-->
+    <div class="full_wrap_out" id="full_wrap_area">
+        <!-- full wrap -->
+        <div class="full_wrap">
+            <!-- 전체보기 li -->
+            <ul>
+                <li class="out">
+                    <p><a href="#"><img src="./images/full_txt01.gif" alt="제품" /></a></p>
+                    <ul>
+                        <li><a href="#"><img src="./images/full_sub1_13.gif" alt="Astell&kern" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub1_01.gif" alt="MP3" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub1_14.gif" alt="보이스 레코더" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub1_10.gif" alt="오디오" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub1_04.gif" alt="전자사전" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub1_15.gif" alt="스마트 디바이스" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub1_07.gif" alt="악세서리" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub1_16.gif" alt="Blank" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub1_17.gif" alt="T collection" /></a></li>
+                    </ul>
+                </li>
+                <li class="out">
+                    <p><a href="#"><img src="./images/full_txt03.gif" alt="커뮤니티" /></a></p>
+                    <ul>
+                        <li><a href="#"><img src="./images/full_sub3_01.gif" alt="공지사항" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub3_02.gif" alt="이벤트" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub3_03.gif" alt="파워리뷰" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub3_09.gif" alt="유저리뷰" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub3_08.gif" alt="아스텔앤컨 리뷰" /></a></li>
+                    </ul>
+                </li>
+                <li class="out">
+                    <p><a href="#"><img src="./images/full_txt04.gif" alt="고객지원" /></a></p>
+                    <ul>
+                        <li><a href="#"><img src="./images/full_sub4_01.gif" alt="고객지원 안내" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub4_02.gif" alt="FAQ" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub4_03.gif" alt="온라인 문의" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub4_04.gif" alt="다운로드" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub4_05.gif" alt="아이리버플러스" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub4_06.gif" alt="A/S 안내 및 신청" /></a></li>
+                    </ul>
+                </li>
+                <li class="out">
+                    <p><a href="#"><img src="./images/full_txt05.gif" alt="마이페이지" /></a></p>
+                    <ul>
+                        <li><a href="#"><img src="./images/full_sub5_01.gif" alt="나의정보" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub5_02.gif" alt="개인정보" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub5_03.gif" alt="제품등록" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub5_04.gif" alt="콘텐츠 결제확인" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub5_05.gif" alt="A/S조회" /></a></li>
+                        <li><a href="#"><img src="./images/full_sub5_06.gif" alt="고객의 소리" /></a></li>
+                    </ul>
+                </li>
+                <li class="out last">
+                    <p><a href="#"><img src="./images/full_txt06.gif" alt="회사소개" /></a></p>
+                    <ul>
+                        <li><a href="#"><img src="images/full_sub6_10.gif" alt="드림어스컴퍼니" /></a></li>
+                        <li><a href="#"><img src="images/full_sub6_05.gif" alt="IR" /></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- //전체보기 li -->
+            <!--btn_close-->
+            <div class="btn_close">
+                <a href="#"><img src="./images/ico_close.gif" alt="닫기버튼" /></a>
+            </div>
+            <!--//btn_close-->
+        </div>
+        <!--//full_wrap-->
+    </div>
+    <!--full_wrap_out-->
+    <hr>
+    <!--contents_wrap-->
+    <div class="conwrap">
+        <!--conArea-->
+        <div class="conArea">
+            <!--product button-->
+            <div class="gobtn">
+                <a href="#"><img src="./images/main_Tbtn01_on.gif" alt="바로가기버튼" /></a>
+            </div>
+            <!--//product button-->
+            <!--mainVisual viewTab1-->
+            <div class="mainVisual photo_bbox" id="viewTab1">
+                <ul class="mainPhoto" id="mainPhoto">
+                    <li class="on"><a href="#"><img src="./images/KANN-CUBE_970.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/SP1000M_GOLD_970.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/IRS-B404_970_465.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/Diana_970_465.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/IAW-100_970_465.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/SP1000M_970.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/IVR-15_970_465.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/SE100_970(0).jpg" /></a></li>
+                    <li><a href="#"><img src="./images/BillieJean_970_465.jpg" /></a></li>
+                </ul>
+            </div>
+            <!--//mainVisual viewTab1-->
+            <!--left button-->
+            <span id="prevBtn">
+                <a href="javascript:void(0)"><img src="./images/main_BtnL.png" /></a>
+            </span>
+            <!--//left button-->
+            <!--right button-->
+            <span id="nextBtn">
+                <a href="javascript:void(0)"><img src="./images/main_BtnR.png" /></a>
+            </span>
+            <!--//right button-->
+        </div>
+        <!--//ConArea-->
+        <!--sub_menu-->
+        <div class="maincon">
+            <!--공지사항-->
+            <div class="con">
+                <!--title-->
+                <div class="titarea">
+                    <h3><img src="./images/main_tit01.gif" alt="공지사항" /></h3>
+                    <a href="#"><img src="./images/btn_more.gif" alt="more" /></a>
+                </div>
+                <!--list-->
+                <ul class="mainList">
+                    <li><a href="#">[휴무 안내] 6월 휴무 안내</a>
+                        <span class="date"></span>
+                    </li>
+                    <li><a href="#">[이용안내] 개인정보처리방침 개정 안내</a>
+                        <span class="date"></span>
+                    </li>
+                    <li><a href="#">[휴무 안내] 5월 휴무 안내</a>
+                        <span class="date"></span>
+                    </li>
+                    <li><a href="#">[공고] 주식회사 아이리버 2018년(제20조항 변경)</a>
+                        <span class="date"></span>
+                    </li>
+                    <li><a href="#">[이용안내] 개인정보처리방침 및 이용안내</a>
+                        <span class="date"></span>
+                    </li>
+                    <li><a href="#">[공고] 외부감사인 선임 공고</a>
+                        <span class="date"></span>
+                    </li>
+                </ul>
+            </div>
+            <!--파워리뷰-->
+            <div class="con">
+                <div class="titarea">
+                    <h3><img src="./images/main_tit02.gif" alt="공지사항" /></h3>
+                    <a href="#"><img src="./images/btn_more.gif" alt="more" /></a>
+                </div>
+                <dl class="review">
+                    <dt class="pimg"><a href="#"><img src="./images/sp1000_63_67(1).jpg" alt="PowerReviewThumbnail" /></a></dt>
+                    <dt class="tit">꼭대기에서 하늘 향해 내딛은 또 한걸음 sp1000</dt>
+                </dl>
+                <ul class="mainList">
+                    <li><a href="#">헤드폰 엠프라는 하이퍼 슈트를 탑재한 KANN</a></li>
+                    <li><a href="#">블루투스로 고음질 음악 듣는다! 헤드폰앰프 AK X1000</a></li>
+                </ul>
+            </div>
+            <!--//파워리뷰-->
+            <!--이벤트-->
+            <div class="con lastcon">
+                <div class="titarea">
+                    <h3><img src="./images/main_tit03.gif" alt="공지사항" /></h3>
+                    <a href="#"><img src="./images/btn_more.gif" alt="more" /></a>
+                </div>
+                <div class="event">
+                    <a href="javascript:alert('종료된 이벤트 입니다.');"><img src="./images/Chuseok_279x62.jpg" alt="아이리버와 함께 넉넉하고 풍요로운 한가위" /></a>
+                </div>
+                <ul class="mainList">
+                        <li><a href="javascript:alert('종료된 이벤트 입니다.');">A&ANORMA SR15 론칭이벤트</a></li>
+                        <li><a href="javascript:alert('종료된 이벤트 입니다.');">A&futura SE100 론칭이벤트</a></li>
+                </ul>
+            </div>
+            <!--//이벤트-->
+        </div>
+        <!--//sub_menu-->
+        <!--바로가기-->
+        <ul class="mainbottom">
+            <li><a href="#"><img src="./images/main_bImg01.gif" alt="다운로드-제품별로 다운받을 수 있습니다." /></a></li>
+            <li><a href="#"><img src="./images/main_bImg02.gif" alt="FAQ-온라인 문의 전 살펴보세요" /></a></li>
+            <li><a href="#"><img src="./images/main_bImg03.gif" alt="제품등록-고객님! 제품을 등록해주세요." /></a></li>
+            <li><a href="#"><img src="./images/main_bImg04.gif" alt="A/S신청-한국 서비스 품질 우수 기업" /></a></li>
+            <li class="last"><a href="#"><img src="./images/main_bImg05.gif" alt="온라인문의-궁금증을 풀어드립니다." /></a></li>
+        </ul>
+    </div>
+    <!--//contents_wrap-->
+    <!--footer-->
+    <div id="footerWrap">
+        <div id="footerInWrap">
+            <!--footer_navi-->
+            <ul class="footerNavi">
+                <li><a href="#"><img src="./images/footerM01.gif" alt="회사소개" /></a></li>
+                <li><a href="#"><img src="./images/footerM02.gif" alt="이용약관" /></a></li>
+                <li><a href="#"><img src="./images/footerM03.gif" alt="개인정보처리방침" /></a></li>
+                <li><a href="#"><img src="./images/footerM04.gif" alt="저작권 안내" /></a></li>
+                <li><a href="#"><img src="./images/footerM06.gif" alt="고객센터 1577-5557" /></a></li>
+                <li class="last"><a href="#"><img src="./images/footerM07.gif" alt="MAIL IRIVER@IERVER>COM" /></a></li>
+            </ul>
+            <!--address-->
+            <ul class="footerInfo">
+                <li><address><img src="./images/footerAddr.gif" alt="(06664) 서울시 서초구 방배로18길 5 아이리버 하우스 (주)드림어스컴퍼니" /></address></li>
+                <li><img src="./images/footerInfo01.gif" alt="대표이사 : 이기영" /></li>
+                <li><img src="./images/footerInfo02.gif" alt="사업자등록번호 : 214-86-29288" /></li>
+                <li><a href="#"><img src="./images/footerInfo03_01.gif" alt="통신판매업신고번호 : 서초-1039호[사업자정보확인]" /></a></li>
+                <li class="last"><img src="./images/footerInfo04.gif" alt="개인정보 책임자 : 백창홍" /></li>
+            </ul>
+            <p class="copyright"><img src="./images/copyright.gif" alt="COPYRIGHT Dreamus Company, ALL RIGHT RESERVED" /></p>
+            <!--family site-->
+            <div class="family_site">
+                <div class="footer_site01">
+                    <img src="./images/footer_site.gif" alt="FAMILY SITE">
+                </div>
+                <div class="footer_site02" id="footsite02">
+                    <ul>
+                        <li><img src="./images/footer_site.gif" alt="FAMILY SITE"></li>
+                        <li class="site"><a href="#"><img src="./images/footer_site07.gif" alt="groovers"/></a></li>
+                        <li class="site"><a href="#"><img src="./images/footer_site05.gif" alt="Astell&Kern"/></a></li>
+                        <li class="site"><a href="#"><img src="./images/footer_site02.gif" alt="Iriver Store"/></a></li>
+                        <li class="site"><a href="#"><img src="./images/footer_site04.gif" alt="Iriver Global"/></a></li>
+                        <li class="site"><a href="#"><img src="./images/footer_site08.gif" alt="Dreamus Company"/></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//family site-->
+        </div>
+    </div>
+    <!--//footer-->
+</body>
+
+</html>

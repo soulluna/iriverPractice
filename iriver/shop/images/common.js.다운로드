@@ -1,0 +1,216 @@
+/* ?´ë?ì§€ on/off */
+function imgOver(obj){
+	obj.src = obj.src.replace('.gif', '_on.gif');
+}
+function imgOut(obj, type){
+	if(type != "on") {
+		obj.src = obj.src.replace('_on.gif', '.gif');
+	}
+}
+function MM_showHideLayers() {
+    var i, p, v, obj, args = MM_showHideLayers.arguments;
+    for (i = 0; i < (args.length - 2); i += 3)
+        with (document) if (getElementById && ((obj = getElementById(args[i])) != null)) {
+            v = args[i + 2];
+            if (obj.style) { obj = obj.style; v = (v == 'show') ? 'visible' : (v == 'hide') ? 'hidden' : v; }
+            obj.visibility = v;
+        }
+}
+
+$(function() {
+    $("#btnMyIriver").click(function(event) {
+        event.preventDefault();
+        $("#myIriverView").slideToggle();
+
+        var src = ($("#myiriverIcon").attr("src") === "/img/common/btnMyIriverOpen.gif")
+        ? "/img/common/btnMyIriverClose.gif"
+        : "/img/common/btnMyIriverOpen.gif";
+
+        $("#myiriverIcon").attr("src", src);
+
+    });
+});
+
+$(function() {
+    $("#btnMyIriver0").click(function(event) {
+        event.preventDefault();
+
+        $("#myiriverIcon").attr("src", "/img/common/btnMyIriverClose.gif");
+
+        $("#myIriverView").slideDown();
+    });
+});
+
+
+$(function() {
+    $("#btnMyIriver1").click(function(event) {
+        event.preventDefault();
+
+        $("#myiriverIcon").attr("src", "/img/common/btnMyIriverClose.gif");
+    
+        $("#myIriverView").slideDown();
+    });
+});
+
+$(function() {
+    $("#btnMyIriver2").click(function(event) {
+        event.preventDefault();
+
+        $("#myiriverIcon").attr("src", "/img/common/btnMyIriverClose.gif");
+
+        $("#myIriverView").slideDown();
+    });
+});
+
+$(function() {
+    $("#btnMyIriver3").click(function(event) {
+        event.preventDefault();
+
+        $("#myiriverIcon").attr("src", "/img/common/btnMyIriverClose.gif");
+
+        $("#myIriverView").slideDown();
+    });
+});
+
+$(function() {
+    $("#proAllView").click(function(event) {
+        event.preventDefault();
+        $("#proAllViewWrap").slideToggle();
+    });
+
+    $("#proAllViewWrap #proAllClose").click(function(event) {
+        event.preventDefault();
+        $("#proAllViewWrap").slideUp();
+    });
+});
+
+$(function() {
+    $("#menuClick").click(function(event) {
+        event.preventDefault();
+             
+        var src = ($("#imgMenu").attr("src") === "/img/common/categoryTopOpen.gif")
+        ? "/img/common/categoryTopClose.gif"
+        : "/img/common/categoryTopOpen.gif";
+
+        $("#imgMenu").attr("src", src);
+
+        $("#cateWrap").slideToggle();
+    });
+});
+
+
+/************************************* author : Menos  
+*** Param      
+checkId : Ã¼Å© ID      
+rptId   : ¸®ÇÇÅÍ ID ( ÀüÃ¼ ¾ÆÀÌµğ¸í )      
+itemId  : ¸®ÇÇÅÍÀÇ ¾ÆÀÌÅÛ ¾ÆÀÌµğ¸í ( °³Ã¼¿¡ ´ëÇÑ ¾ÆÀÌµğ¸í )      
+tNum    : ÃÑ ¸®ÇÇÅÍ ¾ÆÀÌÅÛ¼ö  
+**************************************/ 
+function RepeaterAll(checkId, rptId, itemId, tNum) {  
+    var chk = document.getElementById(checkId);  
+    var num = "";  
+    var makeId = "";  
+    if (chk.checked) {  
+        RepeaterCheckBoxStatus(rptId, itemId, tNum, true);  
+    } else {  
+        RepeaterCheckBoxStatus(rptId, itemId, tNum, false);  
+    }  
+} 
+ 
+/************************************* author : Menos  
+*** Param      
+rptId   : ¸®ÇÇÅÍ ID ( ÀüÃ¼ ¾ÆÀÌµğ¸í )      
+itemId  : ¸®ÇÇÅÍÀÇ ¾ÆÀÌÅÛ ¾ÆÀÌµğ¸í ( °³Ã¼¿¡ ´ëÇÑ ¾ÆÀÌµğ¸í )      
+tNum    : ÃÑ ¸®ÇÇÅÍ ¾ÆÀÌÅÛ¼ö      
+b       : CheckBoxÀÇ true / false  
+**************************************/ 
+function RepeaterCheckBoxStatus(rptId, itemId, tNum, b) {      
+    var makeId = "";      
+    var num = "";          
+    for(var i=0; i<tNum; i++) {          
+        makeId = "";          
+        if(i<10)   
+            num = "0" + i;  
+        else 
+            num = i;  
+
+        makeId = rptId;          
+        makeId = makeId + "_ctl" + num + "_" + itemId;          
+        document.getElementById(makeId).checked = b;      
+    }  
+}
+
+/************************************* author : Menos  
+*** Param      
+rptId   : ¸®ÇÇÅÍ ID ( ÀüÃ¼ ¾ÆÀÌµğ¸í )      
+itemId  : ¸®ÇÇÅÍÀÇ ¾ÆÀÌÅÛ ¾ÆÀÌµğ¸í ( °³Ã¼¿¡ ´ëÇÑ ¾ÆÀÌµğ¸í )      
+arrNum  : ¸î¹øÂ°ÀÎÁö  
+*****************************************   
+Return      
+makeId  : ÀüÃ¼ ¾ÆÀÌÅÛ ¾ÆÀÌµğ ¸®ÅÏ  
+***************************************/ 
+function EachRepeaterItemId(rptId, itemId, arrNum) {      
+    var makeId = "";          
+    if(arrNum<10)          
+        arrNum = "0" + arrNum;          
+
+    makeId = rptId;      
+    makeId = makeId + "_ctl" + arrNum + "_" + itemId;          
+    return makeId;
+}
+
+function store_download_file(fullpath, fname) {
+    location.href = "/Mypage/DownloadFile.aspx?target=" + (fullpath) + "&fname=" + (fname);
+}
+
+/////////////////////////////////////////////////////////////////////////////
+// ¿ìÆí¹øÈ£ °ü·Ã ,  ÀÛ¼ºÀÚ : ÀåÁØ¿µ
+/////////////////////////////////////////////////////////////////////////////
+//¿ìÆí¹øÈ£ ÆË¾÷
+function PopOpenZipCode(url, zip, addr1, addr2, gbn) {
+    window.open(url + "?zip=" + zip + "&addr1=" + addr1 + "&addr2=" + addr2 + "&gbn=" + gbn, 'zip_pop', 'width=610,height=480');
+    /*
+    alert(url);
+    alert(zip);
+    alert(addr1);
+    alert(addr2);
+    */
+}
+// get object by id
+function $get() {
+    var ret = [];
+    for (var i = 0; i < arguments.length; i++) {
+        if (typeof arguments[i] == 'string') {
+            ret.push(document.getElementById(arguments[i]));
+        } else {
+            ret.push(arguments[i]);
+        }
+    }
+    return ret[1] ? ret : ret[0];
+}
+
+//ÆË¾÷->ºÎ¸ğÃ¢
+/*
+* arg 1,2   ´Â  [element id : value] ÇüÅÂ
+*/
+function SelectZipcode(zip, addr1, addr2, gbn) {
+    $get(zip[0]).value = zip[1];    //¿ìÆí¹øÈ£
+    $get(addr1[0]).value = addr1[1];    //ÁÖ¼Ò
+    $get(gbn[0]).value = gbn[1];    //½ÅÁÖ¼Ò¿©ºÎ(NULL:±¸ÁÖ¼Ò, 1:½ÅÁÖ¼Ò)
+    if (addr2) {    //³ª¸ÓÁöÁÖ¼Ò ÀÔ·Â¶õ Æ÷Ä¿½ºÀÌµ¿
+		$get(addr2[0]).value = addr2[1];    //»ó¼¼ÁÖ¼Ò : 140113 ÀÌº´±¹ Ãß°¡
+        $get(addr2).focus();
+    }
+    return true;
+}
+
+/*
+function SelectZipcode(zip, addr1, addr2) {
+document.getElementById(zip[0]).value = zip[1];    //¿ìÆí¹øÈ£
+document.getElementById(addr1[0]).value = addr1[1];    //ÁÖ¼Ò
+if (addr2) {    //³ª¸ÓÁöÁÖ¼Ò ÀÔ·Â¶õ Æ÷Ä¿½ºÀÌµ¿
+document.getElementById(addr2).focus();
+}
+return true;
+}
+*/
