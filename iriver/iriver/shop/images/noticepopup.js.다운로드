@@ -1,0 +1,62 @@
+//$(function() { $("#lpNotice").draggable(); });
+
+function noticeLayerClose(idx) {
+    document.getElementById("lpNoticePopup" + idx).style.visibility = "hidden";
+}
+
+function noticeCloseByday(idx, cday) {
+    if (document.getElementById("chkboxNotice" + idx).checked) {
+        setCookie("Trans_NoticePopup" + idx, "done", cday);
+    }
+
+    document.getElementById("lpNoticePopup" + idx).style.visibility = "hidden";
+    document.getElementById("chkboxNotice" + idx).checked = false;
+}
+
+function noticeCloseBydayWin(idx, cday) {
+    if (document.getElementById("chkboxNotice" + idx).checked) {
+        setCookie("Trans_NoticePopup" + idx, "done", cday);
+    }
+
+    window.self.close();
+    document.getElementById("chkboxNotice" + idx).checked = false;
+}
+
+/*function noticeCloseByOneday(idx) {
+    setCookie("Trans_Notice" + idx, "done", 1);
+
+    document.getElementById("lpNotice" + idx).style.visibility = "hidden";
+    document.getElementById("chkboxNotice" + idx).checked = false;
+}*/
+
+function setCookie(name, value, expiredays) {
+    var todayDate = new Date();
+
+    todayDate.setDate(todayDate.getDate() + expiredays);
+
+    document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+}
+
+function getCookie(name) {
+	var nameOfCookie = name + '=';
+	var x = 0;
+
+	while (x <= document.cookie.length) 
+	{
+		var y = (x+nameOfCookie.length);
+		if (document.cookie.substring(x,y) == nameOfCookie)
+		{
+			if ((endOfCookie = document.cookie.indexOf(';',y)) == -1)
+			{
+				endOfCookie = document.cookie.length;
+				return unescape(document.cookie.substring(y,endOfCookie));
+			}
+			x = document.cookie.indexOf(' ',x) + 1;
+			if (x == 0)
+			{
+				break;
+			}
+		}
+	}
+	return '';
+}

@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+#promotionWrap { width:970px; height:350px; margin:20px auto 0 auto; position:relative; }
+#promotionWrap .event1 { position:absolute; top:0; left:0; }
+#promotionWrap .event2 { position:absolute; top:0; left:260px; }
+#promotionWrap .event3 { position:absolute; bottom:0; left:260px; }
+#promotionWrap .event4 { position:absolute; bottom:0; left:500px; }
+#promotionWrap .event5 { position:absolute; top:0; right:0; }
+#promotionWrap .event6 { position:absolute; bottom:0; right:0; }
+
+#contentsWrap { width:970px; height:1020px; margin:20px auto 0 auto; }
+#contentsWrap #leftContents { width:720px; float:left; }
+#contentsWrap #leftContents h4 { border-bottom:1px solid #e2e2e2; padding-bottom:10px; margin-bottom:15px; }
+#contentsWrap #leftContents #hitProWrap { width:708px; height:204px; background:#f4f4f6; border:1px solid #dbdbdd; padding:5px 5px; _margin-top:20px;}
+#contentsWrap #leftContents #hitProWrap h4 { text-align:right; border-bottom:none; padding-bottom:0; margin-bottom:0; }
+#contentsWrap #leftContents #hitProWrap .inHitPro { width:708px; height:179px; overflow:hidden; background:url(../../img/main/hitProBg.gif) no-repeat; margin-top:7px; }
+#contentsWrap #leftContents #hitProWrap .inHitPro li { float:left; }
+#contentsWrap #leftContents #hitProWrap .inHitPro li.hitNum1 { width:303px; height:179px; }
+#contentsWrap #leftContents #hitProWrap .inHitPro li.hitNum2 { width:192px; height:79px; padding:10px 0 0 10px; }
+#contentsWrap #leftContents #hitProWrap .inHitPro li.hitNum3 { width:193px; height:79px; padding:10px 0 0 10px; }
+#contentsWrap #leftContents #hitProWrap .inHitPro li.hitNum4 { width:192px; height:80px; padding:10px 0 0 10px; }
+#contentsWrap #leftContents #hitProWrap .inHitPro li.hitNum5 { width:193px; height:80px; padding:10px 0 0 10px; }
+#contentsWrap #leftContents .mrB {margin-bottom:16px;}
+
+#contentsWrap #rightContents { width:230px; float:right; }
+
+#contentsWrap #rightContents #accMallWrap {margin-bottom:20px;}
+#contentsWrap #rightContents #accMallWrap h4 { margin-bottom:10px; }
+#contentsWrap #rightContents #accMallWrap .inAccMall { width:200px; height:218px; border:5px solid #e2e2e2; padding:10px 10px; position:relative; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accTab1 { position:absolute; top:-5px; right:-5px; width:40px; height:40px; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accNavi { width:202px; overflow:hidden; margin-top:3px; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accNavi li { font-size:11px; float:left; letter-spacing:-1px; overflow:hidden; text-align:center; width:50px; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accNavi li.w40 { width:46px; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accNavi li a { font-size:11px; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accNavi li a:hover { background:#f07539; color:#fff; padding:3px; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accNavi li a.on { background:#f07539; color:#fff; padding:3px; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accList { width:200px; overflow:hidden; margin:10px 0 0 0; }
+#contentsWrap #rightContents #accMallWrap .inAccMall .accList li { width:100px; overflow:hidden; float:left; }
+.accList { width:200px; overflow:hidden; margin:10px 0 0 0; }
+.accList li { width:100px; overflow:hidden; float:left; }
+
+#contentsWrap #rightContents #newAccWrap { width:228px; height:493px; margin-bottom:20px; border:1px solid #e9bfb1; }
+#contentsWrap #rightContents #newAccWrap h4 { border-bottom:1px solid #e9bfb1; padding:10px 0 9px 10px; }
+#contentsWrap #rightContents #newAccWrap .newAccList { width:208px; margin:10px auto 0 auto; }
+#contentsWrap #rightContents #newAccWrap .newAccList ul { width:200px; height:86px; border:4px solid #f2f2f2; padding:10px 0; }
+#contentsWrap #rightContents #newAccWrap .newAccList ul li { float:left; height:86px; border-right:1px solid #ebebeb; padding:0 8px; width:50px; text-align:center; overflow:hidden;}
+#contentsWrap #rightContents #newAccWrap .newAccList ul li.last { border-right:none; }
+#contentsWrap #rightContents #newAccWrap .newAccList ul li .accNewInfo { line-height:14px; overflow:hidden; }
+#contentsWrap #rightContents #newAccWrap .newAccList ul li .accNewInfo img { margin-bottom:10px; float:left; }
+#contentsWrap #rightContents #newAccWrap .newAccList ul li .accNewInfo span { font-size:11px; }
+
+#contentsWrap #rightContents #reviewWrap { width:200px; height:186px; border:1px solid #ccc; padding:14px 14px; position:relative; }
+#contentsWrap #rightContents #reviewWrap h5 { border-bottom:1px solid #e2e2e2; padding-bottom:5px; overflow:hidden; }
+#contentsWrap #rightContents #reviewWrap .btnMore { position:absolute; top:18px; right:14px; }
+#contentsWrap #rightContents #reviewWrap .reviewList { margin-top:10px; }
+#contentsWrap #rightContents #reviewWrap .reviewList li { margin-top:3px; height:50px; }
+#contentsWrap #rightContents #reviewWrap .reviewList .reviewTxt { overflow:hidden; line-height:13px; }
+#contentsWrap #rightContents #reviewWrap .reviewList .reviewTxt img { float:left; margin-right:5px; }
+#contentsWrap #rightContents #reviewWrap .reviewList .reviewTxt span.subject { font-weight:bold; color:#000; display:block; margin:4px 0; max-height:13px; overflow:hidden;}
+#contentsWrap #rightContents #reviewWrap .reviewList .reviewTxt span.review { font-size:11px; color:#999; }
+
+#csCenterWrap { width:970px; height:160px; margin:34px auto; padding-top:0; clear:both; }
+#csCenterWrap #infoArea { width:720px; height:160px; float:left; }
+#csCenterWrap #infoArea #prevWrap { width:720px; margin-bottom:17px; overflow:hidden; }
+#csCenterWrap #infoArea #prevWrap h5 { border-bottom:1px solid #e2e2e2; padding-bottom:7px; overflow:hidden; }
+#csCenterWrap #infoArea .noticeWrap { width:345px; position:relative; float:left; }
+#csCenterWrap #infoArea .eventWrap { width:345px; position:relative; float:right; text-align:left; }
+#csCenterWrap #infoArea .btnMore { position:absolute; top:2px; right:0; }
+#csCenterWrap #infoArea #prevWrap ul { width:345px; overflow:hidden; padding-top:8px; }
+#csCenterWrap #infoArea #prevWrap ul li { background:url(../../img/icon/bullet01.gif) no-repeat left 8px; padding-left:8px; margin-bottom:4px; }
+#csCenterWrap #infoArea #prevWrap ul li span.title { width:280px; _width:278px; float:left; overflow:hidden; display:inline-block; }
+#csCenterWrap #infoArea #prevWrap ul li span.date { text-align:right; font-family:tahoma; font-size:11px; color:#999; display:inline-block; }
+
+#csCenterWrap #infoArea #infoBtnWrap { height:50px; overflow:hidden; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap01 { overflow:hidden; float:left; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap01 li { float:left; background:url(../../img/main/dotLine01.gif) repeat-y right 0; padding:0 15px; overflow:hidden; width:185px; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap01 li.frist { padding-left:0; width:170px; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap01 li.last { padding-right:0; background:none; width:150px; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap01 .iconWrap { float:left; margin-right:10px; width:50px; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap01 .infoTxt { color:#999; font-size:11px; line-height:12px; letter-spacing:-1px; display:block; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap01 h6 { margin:2px 0 10px 0; overflow:hidden; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap02 { width:137px; float:right; }
+#csCenterWrap #infoArea #infoBtnWrap .btnWrap02 li { border-bottom:1px solid #eee; padding:5px 0 0 11px; height:19px; }
+
+#csCenterWrap #csInfoArea { width:230px; height:160px; float:right; }
+#csCenterWrap #csInfoArea .timeInfoWrap { background:#f7f7f7; border:1px solid #ccc; width:228px; height:47px; padding:16px 0; overflow:hidden; _margin-top:-4px; }
+#csCenterWrap #csInfoArea .timeInfoWrap li { text-align:center; margin-bottom:3px; height:15px; }
+#csCenterWrap #csInfoArea .etc1 { width:105px; float:left; overflow:hidden; text-align:right; padding-right:10px; }
+#csCenterWrap #csInfoArea .etc2 { width:97px; height:10px; float:right; text-align:left; overflow:hidden; background:url(../../img/main/csMailIcon.gif) no-repeat left top; padding-left:18px; margin-top:-11px; }
+#csCenterWrap #csInfoArea .etc2 span.mail { font-size:11px; font-family:tahoma; margin-top:-5px; display:block; }

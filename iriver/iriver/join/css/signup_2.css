@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* mypage */
+a:hover {text-decoration:underline; color:#666}
+#conwrap {width:970px; margin:27px auto 0 auto; position:relative; overflow:hidden; padding-bottom:27px;}
+legend, caption{display : none;}
+
+
+/* contents */
+h2.conTitle {line-height:0; padding:0; margin:0;}
+h3 {line-height:0; margin:30px 0 23px;}
+.inWrap {margin:0 auto; width:890px;}
+.inWrap .inCon {margin:25px 0 0; padding:0; clear:both;}
+.inWrap .inCon .radiolist {padding:10px 0;overflow:hidden;}
+
+/*�ֹ�step */
+.step {padding:0; margin:0; margin-top:20px; clear:both}
+.step li {float:left;}
+
+/* condetail*/
+.condetail {padding-top:20px;}
+.condetail:after {content:"."; display:block; clear:both; height:0; visibility:hidden;}
+.condetail h3 {margin:10px 0 20px;  padding:0;line-height:0;}
+.condetail h4 {padding-left:5px; padding-bottom:10px; }
+.completeT {text-align:center; font-weight:bold; font-size:14px; padding:69px 0 7px;}
+
+/* box */
+.conBox0 { width:830px;}
+.conBox01 { width:410px; float:left; border-right:1px solid #e8e3e0;}
+.conBox02 { width:385px; float:right;}
+
+.conBox1 {border:5px solid #dfdfdf; background:#f8f8f8; padding:25px; clear:both; text-align:center;  overflow:hidden;}
+.conBox1 .radio {padding:0 0 18px; margin:0; overflow:hidden;clear:both}
+.conBox1 .radio li {display:inline; padding:0 20px; line-height:1em; font-size:12px; font-weight:normal;}
+.conBox2  {border:5px solid #dfdfdf; padding:25px; clear:both; overflow:hidden;}
+.conBox2 ul {padding:28px 0 0; margin:0;}
+.conBox2 li {float:left; line-height:0;}
+.textBox {padding:7px 10px 5px;}
+.textBox li {padding-left:10px; line-height:18px;}
+.infoBox {margin-top:20px; border:1px solid #cccccc; padding:10px 10px 10px 30px;color:#888888;background:url(../img/company/ico_info.gif) no-repeat 10px 13px;}
+
+/* table */
+	/* table detail03 */
+.tbDetail03 {border-top:1px solid #e97d48; }
+.tbDetail03 th,.tbDetail03 td {border-bottom:1px solid #e1e1e1; line-height:30px; padding-left:15px;}
+.tbDetail03 th {padding-left:30px; background:#f3f3f3 url(../img/mypage/ball_orange.gif) no-repeat 20px 14px; text-align:left; font-weight:normal}
+.tbDetail03 .namecheck {margin-left:30px; font-size:11px; color:#888;display:inline-block; line-height:20px;}
+.tbDetail03 .namecheck input {vertical-align:middle;}
+.tbDetail03 .lineH18 th, .tbDetail03 .lineH18 td {line-height:18px; padding-top:5px; padding-bottom:5px;}
+.borderB {border-bottom:1px solid #e1e1e1}
+.borderT {border-top:2px solid #e97d48}
+.tbDetail03 img {vertical-align:middle;}
+.tbDetail03 .style1 th {background-color:#f3f0ec; background-position:20px center; border-right:1px solid #e1e1e1; font-weight:bold;}
+.tbDetail03 .style1 th.in {background-image:none; background-color:#f3f3f3;font-weight:normal; text-align:center; padding-left:0;}
+.tbDetail03 .style1 td {padding-top:10px; padding-bottom:5px;}
+.tbDetail03 .style1 .bgtop th {background-position:20px 20px; line-height:20px; vertical-align:top; padding-top:13px;}
+.tbDetail03 .fs_11 {color:#888;}
+.tbDetail03 .boldT th {font-weight:bold}
+.tbDetail03 .nobg {background-image:none}
+
+/* detail contents*/
+.radiolist {padding:0; margin:0}
+.radiolist li {float:left; padding-right:25px;}
+.radiolist li input, .radiolist li img {vertical-align:middle; margin-top:-2px;}
+
+.nameInput {padding:30px 25px 28px; margin:0 0 20px; border-top:1px solid #e8e3e0; border-bottom:1px solid #e8e3e0; clear:both; overflow:auto}
+.nameInput li {float:left; padding-left:13px; background:url(../img/company/bullet_arrow01.gif) no-repeat left center; font-weight:bold; font-size:14px;}
+.nameInput li.last {float:right; padding-right:0; }
+.nameInput input {height:23px; line-height:23px;}
+.nameInput li span {*margin-bottom:3px; display:inline-block; padding-right:5px;}
+
+.nameInput2 {padding:0px 25px 28px; margin:0 0 20px; border-bottom:1px solid #e8e3e0; clear:both; overflow:hidden}
+.nameInput2 li {float:left; padding-left:13px; padding-right:50px; background:url(../img/company/bullet_arrow01.gif) no-repeat left center; font-weight:bold; }
+.nameInput2 li.last {float:left; padding-right:0; *width:445px;overflow:hidden; text-align:left;}
+.nameInput2 input {height:20px; line-height:18px;}
+.nameInput2 .block {display:block; width:100%; padding-left:0;margin-bottom:10px; text-align:left; background:none; line-height:20px;}
+.nameInput2 .block .bold {color:#e95208; font-weight:bold; font-size:14px;} 
+.nameInput2 li span {*margin-bottom:3px;}
+.nameInput2 li .titL {width:45px; display:inline-block; text-align:left;}
+.nameInput2 li .titR {width:90px;display:inline-block; text-align:left;}
+
+.BoxTit {padding-left:13px; margin-bottom:15px; height:18px; line-height:18px; font-weight:bold; font-size:14px; text-align:left; background:url(../img/company/bullet_arrow01.gif) no-repeat left center; }
+.btn {vertical-align:middle;}
+.conBox1 .btn {margin-top:-2px;}
+.conBox1 .txtL {margin-bottom:20px;}
+.imgtxt {margin-bottom:20px;}
+.checkArea {padding:10px 0 15px 0; *padding-top:10px; clear:both; line-height:20px;}
+.checkArea input {padding:0; margin:0;}
+.sBtnArea {padding:0; margin:0}
+.sBtnArea li {display:inline; margin-right:2px;}
+.bnt_zipcode {vertical-align:middle; margin-bottom:5px;}
+.tdTextarea {width:700px; height:146px; overflow-y:scroll; padding:0; margin-bottom:5px; }
+
+.btnCenter {text-align:center; padding-top:20px; clear:both;}
+.btnCenter li {display:inline; padding:0 6px}
+.btnCenter2  {text-align:center; padding-top:20px; clear:both;}
+.btnCenter2 li{display:inline; line-height:0; margin:0; padding:0;}
+
+/*text style*/
+.txtOrang {color:#e95208 !important}
+.txtOrang2 {color:#f07539; font-size:14px;}
+.txtBrown {color:#9f6e4e}
+.txtGreen {color:#689618}
+.txtYellow01 {color:#b1581c}
+.txtgray {color:#666;}
+
+/* img */
+.ThumList {width:62px; height:62px;}
+.ptimg {border:1px solid #e5e5e5}
+
+/* common */
+textarea {border:1px solid #d8d8d8; padding:0 0 0 10px ; color:#474747; width:958px; height:100px; font-family:����; font-size:12px; color:666666; overflow: auto; resize:none; }
+label {display:none}
+.inputTxt {border:1px solid #d7d7d7; height:19px; line-height:20px; padding:0 7px;}
+input {color:#666666;}
+.vrtop{vertical-align:top;}
+.vrM {vertical-align:middle;}
+.wordbreak{word-break:brea-all; word-wrap:break-word; height:auto}
+.txtL{text-align:left;}
+.txtR {text-align:right;}
+.txtC{text-align:center;}
+
+/* top button */
+/*a#btn_to_top{display:none;} IE7~8용 TOP버튼 */
+a#btn_to_top{display:block; position:fixed; right:20px; bottom: 25px; z-index:15;}    
