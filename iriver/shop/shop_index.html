@@ -11,12 +11,12 @@
     <script src="./js/jquery.easing.1.3.js"></script>
     <!--가속도-->
     <script src="js/jquery-ui.min.js"></script><!-- user interface -->
-    <script src="js/prefixfree.min.js"></script><!-- vender prefix -->
     <script src="./js/main.js"></script><!-- user js -->
     <script src="./js/common.js"></script><!-- user js -->
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/sub.css"/>
 </head>
 
 <body>
@@ -950,8 +950,12 @@
                             <span class="totalPrice" id="displayMsgSum">0</span>
                         </dd>
                     </dl>
+                    <!--buy button-->
                     <div class="btnWrap" style=" text-align:right;">
+                        <input type="image" name="ctl00$cpContents$btnOrder" id="ctl00_cpContents_btnOrder" src="./images/btnBuy.gif" alt="구매하기" style="border-width:0px;">
+                        <input type="image" name="ctl00$cpContents$btnCart" id="ctl00_cpContents_btnCart" src="./images/btnCart (1).gif" alt="장바구니" style="border-width:0px;">
                     </div>
+                    <!--//buy button-->
                 </div>
                 <!--// option -->
             </div>
@@ -1063,9 +1067,6 @@
                     style="padding-left:10px;"><img src="./images/footerInfo01.gif" alt="대표이사 : 이기영"></span>
             </address>
             <ul class="footerInfo">
-                <!--<li class="frist">
-                        <img src="/img/common/footerInfo01.gif"
-                            alt="대표이사 : 박일환" /></li>-->
                 <li class="frist"> <img src="./images/footerInfo02.gif" alt="사업자등록번호 : 214-86-29288"></li>
                 <li><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2008321012130201039"
                         target="_blank"> <img src="./images/footerInfo03_01.gif"
@@ -1078,169 +1079,6 @@
         </div>
     </div>
     <!--// footer -->
-    </div>
-    <!-- myIriver -->
-    <div id="myIriver">
-        <div id="inMyIriver">
-            <!-- btnList -->
-            <div class="titleWrap">
-                <p class="myIriverTit"><a href="#//shop.iriver.co.kr/product/productview.aspx?prdtCode=526091#"
-                        id="btnMyIriver0"><img src="./images/titMyIriver.gif" alt="마이 아이리버"></a></p>
-                <ul>
-                    <li onclick="showTab(2);" style="cursor: pointer"> <a
-                            href="#//shop.iriver.co.kr/product/productview.aspx?prdtCode=526091#"
-                            id="btnMyIriver1"><img src="./images/titCart.gif" alt="장바구니" id="tab2"></a> <span
-                            id="tab2">[
-                            0
-                            ]</span> </li>
-                    <li onclick="showTab(3);" style="cursor: pointer"> <a
-                            href="#//shop.iriver.co.kr/product/productview.aspx?prdtCode=526091#"
-                            id="btnMyIriver2"><img src="./images/titLatelyViewPro.gif" alt="최근 본 제품"
-                                id="tab3"></a> <span id="tab3">[
-                            1
-                            ]</span> </li>
-                    <li onclick="showTab(1);" class="last" style="cursor: pointer; display:none;"> <a
-                            href="#//shop.iriver.co.kr/product/productview.aspx?prdtCode=526091#"
-                            id="btnMyIriver3"><img src="./images/titMyWishList.gif" alt="나의 위시리스트" id="tab1"></a>
-                        <span id="tab1">[
-                            0
-                            ]</span> </li>
-                </ul>
-                <p class="openBtn"><a href="#//shop.iriver.co.kr/product/productview.aspx?prdtCode=526091#"
-                        id="btnMyIriver"><img src="./images/btnMyIriverOpen.gif" alt="열기" id="myiriverIcon"
-                            width="15" height="15"></a></p>
-                <div class="clear"></div>
-            </div>
-            <!--// btnList -->
-            <div id="myIriverView" style="display: none;">
-                <!-- 나의 위시리스트 -->
-                <div class="myList" id="viewTab1" style="display: none">
-                    <!-- productList -->
-                    <p class="selectDel">
-                        <input type="image" name="ctl00$btnWishDelSel" id="ctl00_btnWishDelSel"
-                            src="./images/btn_deletesel.gif" onclick="return checkWishSelect();"
-                            style="border-width:0px;">
-                        &nbsp;&nbsp;
-                        <input type="image" name="ctl00$btnWishDelAll" id="ctl00_btnWishDelAll"
-                            src="./images/btn_deleteall.gif" onclick="return checkWishDelete();"
-                            style="border-width:0px;">
-                    </p>
-                    <div class="titleBar"> <span> <img src="./images/titMyWishList02.gif" alt="나의 위시리스트"></span>
-                        <span class="btnMore"> <a href="#//shop.iriver.co.kr/Mypage/WishList.aspx"><img
-                                    src="./images/btnMore.gif" alt="전체보기"></a> </span> </div>
-
-                    <!--// productList -->
-
-                    <!-- 선택상품이 없을 경우 -->
-                    <p id="ctl00_divWIshListNoLogin" class="noProWrap"
-                        style="width:100%; height:100px; text-align:center; vertical-align:middle"><br>
-                        <br>
-                        로그인후 이용하여 주십시오.</p>
-                    <!-- 선택상품이 없을 경우 -->
-                </div>
-                <!--// 나의 위시리스트 -->
-                <!-- 장바구니 -->
-                <div class="myList" id="viewTab2">
-                    <!-- productList -->
-                    <p class="selectDel">
-                        <input type="image" name="ctl00$btnCartDelSel" id="ctl00_btnCartDelSel"
-                            src="./images/btn_deletesel.gif" onclick="return checkCartSelect();"
-                            style="border-width:0px;">
-                        &nbsp;&nbsp;
-                        <input type="image" name="ctl00$btnCartDelAll" id="ctl00_btnCartDelAll"
-                            src="./images/btn_deleteall.gif" onclick="return checkCartDelete();"
-                            style="border-width:0px;">
-                    </p>
-                    <div class="titleBar"> <span><img src="./images/titCart02.gif" alt="장바구니"></span> <span
-                            class="btnMore"><a href="#//shop.iriver.co.kr/Shopping/Cart.aspx"><img
-                                    src="./images/btnMore.gif" alt="전체보기"></a></span> </div>
-
-                    <!--// productList -->
-                    <p id="ctl00_divCartListNoData" class="noProWrap"
-                        style="width:100%; height:100px; text-align:center; vertical-align:middle"><br>
-                        <br>
-                        선택한 상품이 없습니다.</p>
-                    <!-- 선택상품이 없을 경우 -->
-                </div>
-                <!--// 장바구니 -->
-                <!-- 최근본제품 -->
-                <div class="myList" id="viewTab3" style="display: none">
-                    <!-- productList -->
-                    <p class="selectDel">
-                        <input type="image" name="ctl00$btnCartLookDelSel" id="ctl00_btnCartLookDelSel"
-                            src="./images/btn_deletesel.gif" onclick="return checkCartLookSelect();"
-                            style="border-width:0px;">
-                        &nbsp;&nbsp;
-                        <input type="image" name="ctl00$btnCartLookDelAll" id="ctl00_btnCartLookDelAll"
-                            src="./images/btn_deleteall.gif" onclick="return checkCartLookDelete();"
-                            style="border-width:0px;">
-                    </p>
-                    <div class="titleBar"> <span><img src="./images/titLatelyViewPro02.gif" alt="최근본제품"></span>
-                    </div>
-                    <div id="ctl00_divCartlookList" class="photo_bbox_3"> <a
-                            href="#//shop.iriver.co.kr/product/productview.aspx?prdtCode=526091#left"
-                            class="photo_bleft_3"><img src="./images/btnLeft.gif" alt="앞으로"></a>
-                        <div class="photo_bimg_3" style="overflow: hidden;">
-                            <ul class="myProList">
-
-                                <li>
-                                    <span internalid="23638850"><input id="ctl00_rptCartlookList_ctl00_chkLook"
-                                            type="checkbox" name="ctl00$rptCartlookList$ctl00$chkLook"></span>
-                                    <div class="img">
-                                        <div class="preview"> <a href="javascript:openLayer(&#39;526091&#39;);"> <img
-                                                    src="./images/btnZoom.gif" alt="미리보기"></a></div>
-                                        <a href="#//shop.iriver.co.kr/Product/ProductView.aspx?prdtCode=526091">
-                                            <img src="./images/(35724).jpg" alt="아스텔앤컨 KANN CUBE" width="126"
-                                                height="126"></a>
-                                    </div>
-                                    <div class="proInfoWrap"> <a
-                                            href="#//shop.iriver.co.kr/Product/ProductView.aspx?prdtCode=526091">
-                                            <span class="proName"> 아스텔앤컨 KANN CUBE</span></a> <a
-                                            href="#//shop.iriver.co.kr/Product/ProductView.aspx?prdtCode=526091">
-                                            <span class="proComm"> </span></a><br>
-                                        <span class="price"> 1980000원</span>
-                                        <div class="pointWrap"> <span class="point"> 5% </span>
-                                            &nbsp; <span class="card">10</span>
-
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                        <a href="#//shop.iriver.co.kr/product/productview.aspx?prdtCode=526091#left"
-                            class="photo_bright_3"><img src="./images/btnRight.gif" alt="뒤로"></a>
-                    </div>
-                    <!--// productList -->
-
-                    <!-- 선택상품이 없을 경우 -->
-                </div>
-                <!--// 최근본제품 -->
-            </div>
-        </div>
-        <p><a href="#//shop.iriver.co.kr/product/productview.aspx?prdtCode=526091#bodytop" id="btn_to_top"
-                style="display: none;"><img src="./images/top.png" alt="To Top"></a></p>
-    </div>
-    <script type="text/javascript">
-        photo_init_1();
-        photo_init_2();
-        photo_init_3();
-
-        function chkAlert(sType) {
-            if (sType == "001") {
-                alert("진행중인 추천Item 이 없습니다.");
-            }
-            else if (sType == "002") {
-                alert("진행중인 Shopping 기획전이 없습니다.");
-            }
-        }
-    </script>
-
-    <!--// myIriver -->
-    </form>
-
-
-
 </body>
 
 </html>

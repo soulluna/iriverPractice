@@ -29,7 +29,6 @@ input.textBox { height:17px; margin-bottom:1px; padding:0 2px; }
 .file { width:30em; }
 textarea {border:1px solid #969696;}
 hr {display:none;}
-.png24 	{ tmp:expression(setPng24(this)); }
 #accessibility { position:absolute; overflow:hidden; height:0; width:0; font-size:0; visibility:hidden; }
 
 .hideTxt { display:none; }
@@ -213,9 +212,6 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
 	color:#666;
 	font-size:11px;
-}
-.sf-menu li {
-   /*position:relative;*/
 }
 .sf-menu ul { border: 1px solid #f3a179; padding:10px; position:absolute;}
 .sf-menu ul li ul {position:absolute;border:1px solid #b6b6b6; width:150px; padding:10px; min-width:60px; top:-5px !important; margin:0;}
