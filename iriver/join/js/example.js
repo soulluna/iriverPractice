@@ -1,3 +1,0 @@
-$(".gnb li").each(function(){
-    
-})
